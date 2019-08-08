@@ -1,0 +1,3 @@
+ItemName Name
+
+// Here you can add names for your items syntax is the first wird per line is the item name and everything after that is the name

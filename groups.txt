@@ -1,0 +1,4 @@
+Group ALL "EVERYTHING"
+
+// ==================== OG ====================
+Group sampleGroup "Sample group display name" (optionalParentGroup) Item1;Item2
