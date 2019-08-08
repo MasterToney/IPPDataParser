@@ -13,6 +13,8 @@ public class Main {
     Map<String, String> correlation;
 
     public static void main(String[] args) {
+        ValidateArgs(args);
+
         System.out.print("Trying to open \"" + args[0] + "\" ... ");
         Main main = new Main();
 
@@ -325,5 +327,12 @@ public class Main {
             }
         }
         System.out.println();
+    }
+
+    private static void ValidateArgs(String[] args) {
+        if (args.length != 3) {
+            System.out.println("USAGE: Main groupAddresses.xml designation.txt groups.txt\nFor more information about the content of these files, please refer to the README");
+            System.exit(0);
+        }
     }
 }
